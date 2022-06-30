@@ -1,0 +1,8 @@
+:root{
+    --yellow-soft-linear: linear-gradient(180deg, rgba(255, 252, 176, 0.81) 0%, rgba(255, 251, 149, 0.7938) 100%);
+    --green-soft-opacity: rgba(202, 255, 163, 0.54);
+    --green-dark-opacity: rgba(74, 150, 20, 0.805);
+    --yellow--moresoft-linear: linear-gradient(180deg, #FFFDCA 0%, #FBF8AB 100%);
+    --yellow-soft: #FFFED3;
+    --yellow-dark-soft-linear: linear-gradient(180deg, #F1EEA6 0%, rgba(255, 251, 149, 0.98) 100%);
+}

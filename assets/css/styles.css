@@ -1,0 +1,403 @@
+@import "./colors.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+nav{
+    min-width: 32rem;
+    width: 100vw;
+    height: 10vh;
+    background: var(--yellow-soft-linear);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav .nav__menu-icon{
+    width: 2.7rem;
+    min-width: 2.7rem;
+    height: 2.3rem;
+    align-self: center;
+    margin-left: 0.7rem;
+}
+
+header{
+    width: 100vw;
+    min-width: 32rem;
+    height: 60vh;
+    background-image: url('/assets/images/CAMPO_OCUPACIONAL1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main #video-presentation{
+    width: 100vw;
+    min-width: 32rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #video-presentation iframe{
+    border-radius: 0.5rem;
+    width: 24.6rem;
+    min-width: 23rem;
+    height: 13.4rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+#news{
+    width: 100vw;
+    height: auto;
+    min-width: 32rem;
+}
+
+#news .news__title, #news .news__link{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#new .news__title > hr{
+    border: none;
+    height: 0.1rem;
+    color: #000;
+}
+
+#news .news__link{
+    margin-bottom: 2.5rem;
+}
+
+#news .news__link a{
+    text-decoration: none;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 700;
+}
+
+
+#news .news__title > div{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+#news .news__title > div > h2{
+    margin-left: 0.5rem;
+}
+
+#news .news__title > div > svg{
+    fill: rgb(239, 239, 1);
+}
+
+#news .news__card{
+    width: 85%;
+    min-width: 26rem;
+    max-width: 35rem;
+    height: 10rem;
+    margin: 2.5rem auto;
+    background-color:var(--green-soft-opacity);
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    place-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#news .news__card .news__card-image{
+    width: 8.5rem;
+    height: 7.8rem;
+    background-image: url('/assets/images/not-image.jpg');
+    background-size: cover;
+    margin-right: 1rem;
+}
+#news .news__card .news__card-content{
+    height: 7.8rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr auto;
+}
+
+.news__card h1{
+    line-height: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.news__card p{
+    line-height: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.news__card a{
+    line-height: 1.2rem;
+    margin-bottom: 0.9rem;
+    justify-self: flex-end;
+}
+
+#contact{
+    width: 100vw;
+    height: 40vh;
+    min-width: 32rem;
+    padding: 2rem 0rem;
+    background-color: var(--yellow-soft);
+}
+
+#contact .contact__title{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contact .contact__content{
+    justify-self: center;
+}
+
+#contact .contact__details{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    margin: 0 auto;
+}
+.contact__image{
+    place-self: center;
+}
+footer{
+    width: 100vw;
+    height: 50vh;
+    min-width: 32rem;
+    background: var(--yellow-dark-soft-linear);
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+#ubication{
+    width: 100vw;
+    height: auto;
+}
+
+#ubication .contact__map{
+    width: 100vw;
+    height: 30rem;
+    min-width: 32rem;
+}
+
+#accesos-directos
+{
+    min-width: 32rem;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+.accesos-directos_title{
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.accesos-directos_container a{
+    text-decoration: none;
+    color: var(--green-dark-opacity);
+}
+
+.accesos-directos_container ul > li {
+    display: inline-block;
+    margin-bottom: 1.7rem;
+}
+
+.accesos-directos_container ul{
+    text-align: center;
+    align-items: center;
+}
+
+.accesso-directo_link
+ {
+    font-size: 2.25rem;
+    padding: 0.7rem;
+ }
+
+.btn.btn-social-icon {
+    width: 3.12rem;
+    height: 3.12rem;
+    padding: 0
+}
+
+.btn.btn-rounded {
+    border-radius: 0.5rem;
+}
+
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-twitter {
+    background: #2caae1;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/************** MENU CODE *********/
+.ocult{
+    display: none !important;
+    transition: all 3s;
+}
+.menu-bar{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100vw;
+    height: 100vh;
+    background: var(--yellow-soft-linear);
+    overflow: auto;
+    font-size: 2rem;
+}
+
+.menu__option {
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    height: auto;
+    margin-top: 2rem;
+}
+.menu__option > li{
+    border-bottom: 0.1rem;
+    border-bottom-style: solid;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu__option > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+
+.menu__close{
+    justify-self: flex-end;
+    width: 5.5rem;
+    padding-right: 3rem;
+}
+.sub-menu{
+    list-style: none;
+}
+.sub-menu > li{
+    padding-top: 1rem;
+}
+.sub-menu > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.menu__principal{
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+.menu__principal li{
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.menu__principal > li:hover{
+    border-bottom: 0.2rem;
+    border-bottom-style: solid;
+    cursor: pointer;
+    background: var(--yellow-dark-soft-linear);
+
+}
+
+
+.menu__principal li a{
+    text-decoration: none;
+    color: black;
+}
+
+.subitem__principal{
+    display: grid;
+    height: 100%;
+    place-content: center;
+}
+
+.subitem__secondary{
+    display: none;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    background-color:  var(--yellow-soft);
+    top: 6rem;
+    
+}
+
+.subitem__secondary > li:hover{
+    background: var(--yellow-dark-soft-linear);
+}
+
+.subitem__principal:hover .subitem__secondary{
+    display: block;
+}
+
+.subitem__principal > ul > li{
+    padding: 2rem;
+}
+
+.wp-block-separator {
+    border-color: #78787836;
+    border-width: 0.1rem;
+}
+
+.page-content{
+    padding: 3rem;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+.page-content p, .page-content ul{
+    font-size: 1.6rem;
+}
+
+.page-content h1, 
+.page-content p, 
+.page-content h2, 
+.page-content ul,
+.page-content hr{
+    margin-bottom: 1.5rem;
+}
+
+.page-content ul{
+    padding-left: 2.5rem;
+}
+
+.wp-block-file{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wp-block-file .wp-block-file__button{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
